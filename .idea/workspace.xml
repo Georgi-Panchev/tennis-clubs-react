@@ -1,13 +1,62 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4379daea-f5f7-4799-bc7a-8f8c2b358813" name="Default Changelist" comment="">
+    <list default="true" id="4379daea-f5f7-4799-bc7a-8f8c2b358813" name="Default Changelist" comment="App renamed">
+      <change afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/clubs/ClubListPage/ClubListPage.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/clubs/CreateClubForm/CreateClubForm.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/clubs/CreateClubPage/CreateClubPage.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/clubs/PetCard/PetCard.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/clubs/PetDetailedCard/PetDetailedCard.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/clubs/PetDetailsPage/PetDetailsPage.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/comments/CommentItem/CommentItem.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/comments/CommentsPanel/CommentsPanel.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/comments/CreateCommentForm/CreateCommentForm.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/common/AccountPage/AccountPage.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/common/Header/Header.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/common/Input/Input.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/common/Input/Input.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/common/PrivateRoute/PrivateRoute.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/common/Routes/Routes.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/users/LoginForm/LoginForm.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/users/LoginPage/LoginPage.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/users/Logout/Logout.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/users/LogoutPage/LogoutPage.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/users/RegisterForm/RegisterForm.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/users/RegisterPage/RegisterPage.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/flux/actions/clubActions.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/flux/actions/commentActions.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/flux/actions/userActions.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/flux/dispatcher.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/flux/stores/ClubStore.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/flux/stores/UserStore.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/flux/stores/commentStore.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/services/ClubService.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/services/CommentData.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/services/Service.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/services/UserService.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utils/Auth.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utils/FormHelpers.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/tennis-clubs.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/tennis-clubs.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="React" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -21,9 +70,20 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/components" />
     <property name="nodejs_interpreter_path" value="node" />
-    <property name="settings.editor.selected.configurable" value="preferences.sourceCode.HTML" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="JavaScript.Libraries" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\User\WebstormProjects\Projects\React\TennisClubsProject\tennis-clubs\src\components" />
+      <recent name="C:\Users\User\WebstormProjects\Projects\React\TennisClubsProject\tennis-clubs\src\services" />
+      <recent name="C:\Users\User\WebstormProjects\Projects\React\TennisClubsProject\tennis-clubs\src\flux" />
+      <recent name="C:\Users\User\WebstormProjects\Projects\React\TennisClubsProject\tennis-clubs\src\utils" />
+    </key>
   </component>
   <component name="ServiceViewManager">
     <option name="viewStates">
@@ -48,13 +108,67 @@
       <option name="presentableId" value="Default" />
       <updated>1575197416723</updated>
       <workItem from="1575197417861" duration="102000" />
+      <workItem from="1575197527799" duration="1300000" />
+      <workItem from="1575199008243" duration="424000" />
+      <workItem from="1575202081958" duration="1063000" />
+      <workItem from="1575203328103" duration="2705000" />
+      <workItem from="1575206586965" duration="916000" />
+      <workItem from="1575207707898" duration="3000" />
+      <workItem from="1575207942159" duration="558000" />
+      <workItem from="1575209140241" duration="4066000" />
+      <workItem from="1575213521822" duration="750000" />
+      <workItem from="1575218011487" duration="7588000" />
+      <workItem from="1575226848102" duration="387000" />
     </task>
+    <task id="LOCAL-00001" summary="App renamed">
+      <created>1575197736856</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1575197736856</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="App renamed" />
+    <option name="LAST_COMMIT_MESSAGE" value="App renamed" />
+  </component>
   <component name="WindowStateProjectService">
+    <state x="-1271" y="140" key="CommitChangelistDialog2" timestamp="1575224843850">
+      <screen x="-1680" y="36" width="1680" height="1020" />
+    </state>
+    <state x="-1271" y="140" key="CommitChangelistDialog2/0.0.1536.834/-1680.36.1680.1020@-1680.36.1680.1020" timestamp="1575224843850" />
     <state x="-983" y="439" key="Github.ShareDialog" timestamp="1575197584836">
       <screen x="-1680" y="36" width="1680" height="1020" />
     </state>
     <state x="-983" y="439" key="Github.ShareDialog/0.0.1536.834/-1680.36.1680.1020@-1680.36.1680.1020" timestamp="1575197584836" />
+    <state width="1637" height="275" key="GridCell.Tab.0.bottom" timestamp="1575213208381">
+      <screen x="-1680" y="36" width="1680" height="1020" />
+    </state>
+    <state width="1637" height="275" key="GridCell.Tab.0.bottom/0.0.1536.834/-1680.36.1680.1020@-1680.36.1680.1020" timestamp="1575213208381" />
+    <state width="1637" height="275" key="GridCell.Tab.0.center" timestamp="1575213208381">
+      <screen x="-1680" y="36" width="1680" height="1020" />
+    </state>
+    <state width="1637" height="275" key="GridCell.Tab.0.center/0.0.1536.834/-1680.36.1680.1020@-1680.36.1680.1020" timestamp="1575213208381" />
+    <state width="1637" height="275" key="GridCell.Tab.0.left" timestamp="1575213208381">
+      <screen x="-1680" y="36" width="1680" height="1020" />
+    </state>
+    <state width="1637" height="275" key="GridCell.Tab.0.left/0.0.1536.834/-1680.36.1680.1020@-1680.36.1680.1020" timestamp="1575213208381" />
+    <state width="1637" height="275" key="GridCell.Tab.0.right" timestamp="1575213208381">
+      <screen x="-1680" y="36" width="1680" height="1020" />
+    </state>
+    <state width="1637" height="275" key="GridCell.Tab.0.right/0.0.1536.834/-1680.36.1680.1020@-1680.36.1680.1020" timestamp="1575213208381" />
+    <state x="-1339" y="188" key="SettingsEditor" timestamp="1575203415729">
+      <screen x="-1680" y="36" width="1680" height="1020" />
+    </state>
+    <state x="-1339" y="188" key="SettingsEditor/0.0.1536.834/-1680.36.1680.1020@-1680.36.1680.1020" timestamp="1575203415729" />
+    <state x="-1248" y="278" key="Vcs.Push.Dialog.v2" timestamp="1575197742828">
+      <screen x="-1680" y="36" width="1680" height="1020" />
+    </state>
+    <state x="-1248" y="278" key="Vcs.Push.Dialog.v2/0.0.1536.834/-1680.36.1680.1020@-1680.36.1680.1020" timestamp="1575197742828" />
   </component>
 </project>
