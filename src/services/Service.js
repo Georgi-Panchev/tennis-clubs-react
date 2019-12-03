@@ -21,6 +21,27 @@ const applyAuthorizationHeader = (options, authenticated) => {
 };
 
 class Service {
+    static put(url, data, authenticated) {
+        let options = getOptions();
+        options.method = 'PUT';
+        options.body = JSON.stringify(data);
+
+        applyAuthorizationHeader(options, authenticated);
+
+        return fetch(`${baseUrl}${url}`, options)
+            .then(handleJsonResponse);
+    }
+
+    static delete(url, data, authenticated) {
+        let options = getOptions();
+        options.method = 'DELETE';
+
+        applyAuthorizationHeader(options, authenticated);
+
+        return fetch(`${baseUrl}${url}`, options)
+            .then(handleJsonResponse);
+    }
+
     static post(url, data, authenticated) {
         let options = getOptions();
         options.method = 'POST';

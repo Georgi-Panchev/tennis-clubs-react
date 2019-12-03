@@ -3,8 +3,8 @@ import toastr from 'toastr';
 import LoginForm from '../LoginForm/LoginForm';
 import Auth from '../../../utils/Auth'
 import FormHelpers from '../../../utils/FormHelpers';
-import userStore from '../../../flux/stores/UserStore';
-import userActions from '../../../flux/actions/userActions';
+import userStore from '../../../state-management/stores/UserStore';
+import userActions from '../../../state-management/actions/userActions';
 
 class LoginPage extends Component {
     constructor(props) {

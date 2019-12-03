@@ -10,6 +10,10 @@ class UserService {
     static login(user) {
         return Service.post(`${midUrl}/login`, user);
     }
+
+    static getProfile() {
+        return Service.get(`${midUrl}/profile`, true);
+    }
 }
 
 export default UserService;

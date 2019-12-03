@@ -2,8 +2,8 @@ import React, { Component } from 'react';
 import toastr from 'toastr';
 import CreateClubForm from '../CreateClubForm/CreateClubForm';
 import FormHelpers from '../../../utils/FormHelpers';
-import clubActions from '../../../flux/actions/clubActions';
-import clubStore from '../../../flux/stores/ClubStore';
+import clubActions from '../../../state-management/actions/clubActions';
+import clubStore from '../../../state-management/stores/ClubStore';
 
 class CreateClubPage extends Component {
     constructor(props) {
@@ -55,7 +55,7 @@ class CreateClubPage extends Component {
         event.preventDefault();
         const club = this.state.club;
 
-        if (!this.validatePet(club)) {
+        if (!this.validateClub(club)) {
             return;
         }
 
@@ -63,7 +63,7 @@ class CreateClubPage extends Component {
         clubActions.create(club);
     };
 
-    validatePet(club) {
+    validateClub(club) {
         let isFormValid = true;
         let errors = {};
         if (!club.title || club.title.length < 3) {

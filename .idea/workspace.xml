@@ -1,50 +1,42 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4379daea-f5f7-4799-bc7a-8f8c2b358813" name="Default Changelist" comment="App renamed">
-      <change afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/clubs/ClubListPage/ClubListPage.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/clubs/CreateClubForm/CreateClubForm.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/clubs/CreateClubPage/CreateClubPage.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/clubs/PetCard/PetCard.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/clubs/PetDetailedCard/PetDetailedCard.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/clubs/PetDetailsPage/PetDetailsPage.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/comments/CommentItem/CommentItem.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/comments/CommentsPanel/CommentsPanel.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/comments/CreateCommentForm/CreateCommentForm.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/common/AccountPage/AccountPage.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/common/Header/Header.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/common/Input/Input.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/common/Input/Input.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/common/PrivateRoute/PrivateRoute.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/common/Routes/Routes.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/users/LoginForm/LoginForm.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/users/LoginPage/LoginPage.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/users/Logout/Logout.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/users/LogoutPage/LogoutPage.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/users/RegisterForm/RegisterForm.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/users/RegisterPage/RegisterPage.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/flux/actions/clubActions.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/flux/actions/commentActions.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/flux/actions/userActions.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/flux/dispatcher.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/flux/stores/ClubStore.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/flux/stores/UserStore.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/flux/stores/commentStore.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/services/ClubService.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/services/CommentData.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/services/Service.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/services/UserService.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/utils/Auth.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/utils/FormHelpers.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/tennis-clubs.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/tennis-clubs.iml" afterDir="false" />
+    <list default="true" id="4379daea-f5f7-4799-bc7a-8f8c2b358813" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/components/tournaments/AttendTournament/AttendTournament.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/tournaments/CreateTournamentForm/CreateTournamentForm.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/tournaments/CreateTournamentPage/CreateTournamentPage.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/tournaments/LeaveTournament/LeaveTournament.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/tournaments/TournamentCard/TournamentCard.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/tournaments/TournamentDetailedCard/TournamentDetailedCard.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/tournaments/TournamentDetailsPage/TournamentDetailsPage.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/tournaments/TournamentListByClubPage/TournamentListByClubPage.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/tournaments/TournamentListPage/TournamentListPage.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/users/ProfilePage/ProfilePage.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/services/TournamentService.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/state-management/actions/tournamentActions.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/state-management/stores/TournamentStore.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/clubs/ClubCard/ClubCard.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/clubs/ClubCard/ClubCard.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/clubs/ClubDetailedCard/ClubDetailedCard.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/clubs/ClubDetailedCard/ClubDetailedCard.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/clubs/ClubDetailsPage/ClubDetailsPage.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/clubs/ClubDetailsPage/ClubDetailsPage.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/clubs/ClubListPage/ClubListPage.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/clubs/ClubListPage/ClubListPage.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/clubs/CreateClubPage/CreateClubPage.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/clubs/CreateClubPage/CreateClubPage.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/comments/CommentsPanel/CommentsPanel.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/comments/CommentsPanel/CommentsPanel.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/common/Header/Header.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/common/Header/Header.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/common/Routes/Routes.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/common/Routes/Routes.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/users/LoginPage/LoginPage.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/users/LoginPage/LoginPage.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/users/RegisterPage/RegisterPage.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/users/RegisterPage/RegisterPage.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/flux/actions/clubActions.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/state-management/actions/clubActions.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/flux/actions/commentActions.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/state-management/actions/commentActions.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/flux/actions/userActions.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/state-management/actions/userActions.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/flux/dispatcher.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/state-management/dispatcher.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/flux/stores/ClubStore.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/state-management/stores/ClubStore.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/flux/stores/UserStore.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/state-management/stores/UserStore.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/flux/stores/commentStore.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/state-management/stores/commentStore.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/services/ClubService.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/ClubService.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/services/CommentData.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/CommentData.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/services/Service.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/Service.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/services/UserService.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/UserService.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,6 +46,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="JavaScript File" />
         <option value="React" />
       </list>
     </option>
@@ -72,17 +65,18 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/components" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../../Archive/React/React Demo" />
     <property name="nodejs_interpreter_path" value="node" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="JavaScript.Libraries" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\User\WebstormProjects\Projects\React\TennisClubsProject\tennis-clubs\src\components" />
       <recent name="C:\Users\User\WebstormProjects\Projects\React\TennisClubsProject\tennis-clubs\src\services" />
+      <recent name="C:\Users\User\WebstormProjects\Projects\React\TennisClubsProject\tennis-clubs\src\flux\stores" />
+      <recent name="C:\Users\User\WebstormProjects\Projects\React\TennisClubsProject\tennis-clubs\src\flux\actions" />
+      <recent name="C:\Users\User\WebstormProjects\Projects\React\TennisClubsProject\tennis-clubs\src\components" />
       <recent name="C:\Users\User\WebstormProjects\Projects\React\TennisClubsProject\tennis-clubs\src\flux" />
-      <recent name="C:\Users\User\WebstormProjects\Projects\React\TennisClubsProject\tennis-clubs\src\utils" />
     </key>
   </component>
   <component name="ServiceViewManager">
@@ -118,7 +112,18 @@
       <workItem from="1575209140241" duration="4066000" />
       <workItem from="1575213521822" duration="750000" />
       <workItem from="1575218011487" duration="7588000" />
-      <workItem from="1575226848102" duration="387000" />
+      <workItem from="1575226848102" duration="1888000" />
+      <workItem from="1575269370805" duration="2149000" />
+      <workItem from="1575273024579" duration="9864000" />
+      <workItem from="1575283978551" duration="1669000" />
+      <workItem from="1575285871804" duration="3970000" />
+      <workItem from="1575290021662" duration="294000" />
+      <workItem from="1575292552533" duration="6022000" />
+      <workItem from="1575358413659" duration="2576000" />
+      <workItem from="1575361151197" duration="3516000" />
+      <workItem from="1575364997153" duration="1384000" />
+      <workItem from="1575366448138" duration="4579000" />
+      <workItem from="1575371126802" duration="1735000" />
     </task>
     <task id="LOCAL-00001" summary="App renamed">
       <created>1575197736856</created>
@@ -127,7 +132,14 @@
       <option name="project" value="LOCAL" />
       <updated>1575197736856</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="App Structure">
+      <created>1575227423432</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1575227423432</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -135,13 +147,22 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="App renamed" />
-    <option name="LAST_COMMIT_MESSAGE" value="App renamed" />
+    <MESSAGE value="App Structure" />
+    <option name="LAST_COMMIT_MESSAGE" value="App Structure" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="-1271" y="140" key="CommitChangelistDialog2" timestamp="1575224843850">
+    <state x="-1110" y="292" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1575274304933">
       <screen x="-1680" y="36" width="1680" height="1020" />
     </state>
-    <state x="-1271" y="140" key="CommitChangelistDialog2/0.0.1536.834/-1680.36.1680.1020@-1680.36.1680.1020" timestamp="1575224843850" />
+    <state x="-1110" y="292" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1536.834/-1680.36.1680.1020@-1680.36.1680.1020" timestamp="1575274304933" />
+    <state x="-1271" y="140" key="CommitChangelistDialog2" timestamp="1575227422781">
+      <screen x="-1680" y="36" width="1680" height="1020" />
+    </state>
+    <state x="-1271" y="140" key="CommitChangelistDialog2/0.0.1536.834/-1680.36.1680.1020@-1680.36.1680.1020" timestamp="1575227422781" />
+    <state x="-1060" y="300" key="FileChooserDialogImpl" timestamp="1575286752778">
+      <screen x="-1680" y="36" width="1680" height="1020" />
+    </state>
+    <state x="-1060" y="300" key="FileChooserDialogImpl/0.0.1536.834/-1680.36.1680.1020@-1680.36.1680.1020" timestamp="1575286752778" />
     <state x="-983" y="439" key="Github.ShareDialog" timestamp="1575197584836">
       <screen x="-1680" y="36" width="1680" height="1020" />
     </state>
@@ -166,9 +187,9 @@
       <screen x="-1680" y="36" width="1680" height="1020" />
     </state>
     <state x="-1339" y="188" key="SettingsEditor/0.0.1536.834/-1680.36.1680.1020@-1680.36.1680.1020" timestamp="1575203415729" />
-    <state x="-1248" y="278" key="Vcs.Push.Dialog.v2" timestamp="1575197742828">
+    <state x="-1248" y="278" key="Vcs.Push.Dialog.v2" timestamp="1575227434076">
       <screen x="-1680" y="36" width="1680" height="1020" />
     </state>
-    <state x="-1248" y="278" key="Vcs.Push.Dialog.v2/0.0.1536.834/-1680.36.1680.1020@-1680.36.1680.1020" timestamp="1575197742828" />
+    <state x="-1248" y="278" key="Vcs.Push.Dialog.v2/0.0.1536.834/-1680.36.1680.1020@-1680.36.1680.1020" timestamp="1575227434076" />
   </component>
 </project>

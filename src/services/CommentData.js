@@ -1,16 +1,15 @@
-import Service from './Service';
+import Data from './Service';
 
-const midUrl = '/clubs/details';
+const midUrl = '/pets/details';
 
 class CommentData {
     static create(id, comment) {
-        return Service.post(`${midUrl}/${id}/comments/create`, comment,true);
+        return Data.post(`${midUrl}/${id}/comments/create`, comment,true);
     }
 
     static all(id) {
-        return Service.get(`${midUrl}/${id}/comments`, true);
+        return Data.get(`${midUrl}/${id}/comments`, true);
     }
 }
 
 export default CommentData;
-

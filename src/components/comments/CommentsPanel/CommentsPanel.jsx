@@ -2,8 +2,8 @@ import React, { Component } from 'react';
 import toastr from 'toastr';
 import CreateCommentForm from '../CreateCommentForm/CreateCommentForm';
 import FormHelpers from '../../../utils/FormHelpers';
-import commentActions from '../../../flux/actions/commentActions';
-import commentStore from '../../../flux/stores/commentStore';
+import commentActions from '../../../state-management/actions/commentActions';
+import commentStore from '../../../state-management/stores/TournamentStore';
 import CommentItem from '../CommentItem/CommentItem';
 
 class CommentsPanel extends Component {

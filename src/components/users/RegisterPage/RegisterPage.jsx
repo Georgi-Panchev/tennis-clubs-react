@@ -2,8 +2,8 @@ import React, { Component } from 'react';
 import toastr from 'toastr';
 import RegisterForm from '../RegisterForm/RegisterForm';
 import FormHelpers from '../../../utils/FormHelpers';
-import userActions from '../../../flux/actions/userActions';
-import userStore from '../../../flux/stores/UserStore';
+import userActions from '../../../state-management/actions/userActions';
+import userStore from '../../../state-management/stores/UserStore';
 
 class RegisterPage extends Component {
     constructor(props) {

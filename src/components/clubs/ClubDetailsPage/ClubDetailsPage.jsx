@@ -1,43 +1,42 @@
 import React, { Component } from 'react';
 import ClubDetailedCard from '../ClubDetailedCard/ClubDetailedCard';
-import clubActions from '../../../flux/actions/clubActions';
-import petStore from '../../../flux/stores/ClubStore';
+import clubActions from '../../../state-management/actions/clubActions';
+import clubStore from '../../../state-management/stores/ClubStore';
 import CommentsPanel from '../../comments/CommentsPanel/CommentsPanel';
 
 class ClubDetailsPage extends Component {
     constructor(props) {
         super(props);
 
-        const id = this.props.match.params.id;
-
         this.state = {
-            id,
-            pet: {}
+            club: {}
         };
 
-        petStore.on(petStore.eventTypes.PET_DETAILS_FETCHED, this.byId);
+        clubStore.on(clubStore.eventTypes.CLUB_DETAILS_FETCHED, this.byId);
     }
 
     byId = (data) => {
+        console.log(data);
         this.setState({
-            pet: data
+            club: data.club
         });
     };
 
     componentWillUnmount() {
-        petStore.off(petStore.eventTypes.PET_DETAILS_FETCHED, this.byId);
+        clubStore.off(clubStore.eventTypes.CLUB_DETAILS_FETCHED, this.byId);
     }
 
     componentDidMount() {
-        clubActions.byId(this.state.id);
+        const id = this.props.match.params.id;
+        clubActions.byId(id);
     }
 
     render() {
         return (
             <div>
-                <h1>Pet Details Page</h1>
-                <ClubDetailedCard pet={this.state.pet} />
-                <CommentsPanel petId={this.state.id} />
+                <h1>Club Details Page</h1>
+                <ClubDetailedCard club={this.state.club} />
+                {/*<CommentsPanel petId={this.state.id} />*/}
             </div>
         );
     }

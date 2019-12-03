@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import Auth from '../../../utils/Auth';
-import userStore from '../../../flux/stores/UserStore';
+import userStore from '../../../state-management/stores/UserStore';
 
 class Header extends Component {
     constructor(props) {
@@ -36,7 +36,9 @@ class Header extends Component {
             linkListElements = (
                 <React.Fragment>
                     <Link to="/user/logout">Logout</Link>
-                    <Link to="/pet/create">Create Pet</Link>
+                    <Link to="/club/create">Create Club</Link>
+                    <Link to="/tournament/all">All Tournaments</Link>
+                    <Link to="/user/profile">Profile</Link>
                     <span>{this.state.username}</span>
                 </React.Fragment>
             );
@@ -44,7 +46,7 @@ class Header extends Component {
 
         return (
             <React.Fragment>
-                <Link to="/">PetList</Link>
+                <Link to="/">ClubList</Link>
                 {linkListElements}
             </React.Fragment>
         );
