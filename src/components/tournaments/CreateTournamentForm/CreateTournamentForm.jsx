@@ -11,7 +11,7 @@ function CreateTournamentForm(props) {
             <div>
                 <label htmlFor="balls">Balls</label>
                 <select name="balls" id="balls" value={tournament.balls} onChange={handleChange}>
-                    <option value="">Choose</option>
+                    <option value="" disabled>Choose</option>
                     <option value="Dunlop">Dunlop</option>
                     <option value="Wilson">Wilson</option>
                     <option value="Head">Head</option>
@@ -20,7 +20,7 @@ function CreateTournamentForm(props) {
             <Input type="number" name="fee" placeholder="Fee"
                    value={tournament.fee} error={errors.fee} handleChange={handleChange} />
             <div>
-                <input type="submit" value="Create Tournament" />
+                <input type="submit" value={props.buttonText} />
             </div>
         </form>
     );

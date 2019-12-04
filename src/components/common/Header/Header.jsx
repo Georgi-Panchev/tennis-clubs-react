@@ -36,9 +36,17 @@ class Header extends Component {
             linkListElements = (
                 <React.Fragment>
                     <Link to="/user/logout">Logout</Link>
-                    <Link to="/club/create">Create Club</Link>
-                    <Link to="/tournament/all">All Tournaments</Link>
                     <Link to="/user/profile">Profile</Link>
+                    <span>{this.state.username}</span>
+                </React.Fragment>
+            );
+        }
+
+        if (Auth.isUserAuthenticated() && Auth.isUserAdmin()) {
+            linkListElements = (
+                <React.Fragment>
+                    <Link to="/user/logout">Logout</Link>
+                    <Link to="/club/create">Create Club</Link>
                     <span>{this.state.username}</span>
                 </React.Fragment>
             );
@@ -47,6 +55,7 @@ class Header extends Component {
         return (
             <React.Fragment>
                 <Link to="/">ClubList</Link>
+                <Link to="/tournament/all">All Tournaments</Link>
                 {linkListElements}
             </React.Fragment>
         );

@@ -54,11 +54,11 @@ class ClubStore extends EventEmitter {
                 break;
             }
             case clubActions.types.UPDATE_CLUB: {
-                this.byId(action.id, action.club);
+                this.update(action.id, action.club);
                 break;
             }
             case clubActions.types.DELETE_CLUB: {
-                this.byId(action.id);
+                this.delete(action.id);
                 break;
             }
             default: break;

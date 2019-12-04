@@ -11,7 +11,7 @@ function CreateClubForm(props) {
             <div>
                 <label htmlFor="city">City</label>
                 <select name="city" id="city" value={club.city} onChange={handleChange}>
-                    <option value="">Choose</option>
+                    <option value="" disabled>Choose</option>
                     <option value="Sofia">Sofia</option>
                     <option value="Plovdiv">Plovdiv</option>
                     <option value="Varna">Varna</option>
@@ -21,7 +21,7 @@ function CreateClubForm(props) {
             <div>
                 <label htmlFor="rank">Rank</label>
                 <select name="rank" id="rank" value={club.rank} onChange={handleChange}>
-                    <option value="">Choose</option>
+                    <option value="" disabled>Choose</option>
                     <option value="Top">Top</option>
                     <option value="Medium">Medium</option>
                     <option value="Low">Low</option>
@@ -29,12 +29,12 @@ function CreateClubForm(props) {
             </div>
             <Input type="number" name="courts" placeholder="Courts"
                    value={club.courts} error={errors.courts} handleChange={handleChange} />
-            <Input type="checkbox" name="hasLighting" placeholder="Lighting"
-                   value={club.hasLighting} error={errors.hasLighting} handleChange={handleChange} />
-            <Input type="checkbox" name="hasIndoorCourts" placeholder="Indoor Courts"
-                   value={club.hasIndoorCourts} error={errors.hasIndoorCourts} handleChange={handleChange} />
+            <Input type="checkbox" name="hasLighting" placeholder="Lighting" value={club.hasLighting}
+                   checked={club.hasLighting} error={errors.hasLighting} handleChange={handleChange} />
+            <Input type="checkbox" name="hasIndoorCourts" placeholder="Indoor Courts" value={club.hasIndoorCourts}
+                   checked={club.hasIndoorCourts} error={errors.hasIndoorCourts} handleChange={handleChange} />
             <div>
-                <input type="submit" value="Create Club" />
+                <input type="submit" value={props.buttonText} />
             </div>
         </form>
     );

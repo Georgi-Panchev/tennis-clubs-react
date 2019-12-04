@@ -28,6 +28,15 @@ class Auth {
         return {};
     }
 
+    static isUserAdmin() {
+        let user = this.getUser();
+        if (Object.keys(user).length > 0) {
+            return user.roles.includes('Admin');
+        }
+
+        return false;
+    }
+
     static removeUser() {
         window.localStorage.removeItem('user');
     }

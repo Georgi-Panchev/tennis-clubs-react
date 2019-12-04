@@ -5,19 +5,21 @@ import FormHelpers from '../../../utils/FormHelpers';
 import clubActions from '../../../state-management/actions/clubActions';
 import clubStore from '../../../state-management/stores/ClubStore';
 
-class CreateClubPage extends Component {
+class UpdateClubPage extends Component {
     constructor(props) {
         super(props);
 
+        const { club } = this.props.location.state;
+
         this.state = {
             club: {
-                title: '',
-                imageUrl: '',
-                city: '',
-                rank: '',
-                courts: 0,
-                hasLighting: false,
-                hasIndoorCourts: false
+                title: club.title,
+                imageUrl: club.imageUrl,
+                city: club.city,
+                rank: club.rank,
+                courts: club.courts,
+                hasLighting: club.hasLighting,
+                hasIndoorCourts: club.hasIndoorCourts
             },
             errors: {
                 title: '',
@@ -30,10 +32,10 @@ class CreateClubPage extends Component {
             }
         };
 
-        clubStore.on(clubStore.eventTypes.CLUB_CREATED, this.create);
+        clubStore.on(clubStore.eventTypes.CLUB_UPDATED, this.update);
     }
 
-    create = (data) => {
+    update = (data) => {
         console.log(data);
         if (!data.success) {
             return toastr.error(data.message);
@@ -44,14 +46,14 @@ class CreateClubPage extends Component {
     };
 
     componentWillUnmount() {
-        clubStore.off(clubStore.eventTypes.CLUB_CREATED, this.create);
+        clubStore.off(clubStore.eventTypes.CLUB_UPDATED, this.update);
     }
 
     handleChange = (event) => {
         FormHelpers.handleFormChange.bind(this)(event, 'club');
     };
 
-    createClub = (event) => {
+    updateClub = (event) => {
         event.preventDefault();
         const club = this.state.club;
 
@@ -60,7 +62,9 @@ class CreateClubPage extends Component {
         }
 
         console.log(club);
-        clubActions.create(club);
+        const id = this.props.match.params.id;
+        console.log(id)
+        clubActions.update(id, club);
     };
 
     validateClub(club) {
@@ -78,12 +82,12 @@ class CreateClubPage extends Component {
     render() {
         return (
             <div>
-                <h1>Create Club</h1>
-                <CreateClubForm club={this.state.club} errors={this.state.errors} buttonText="Create Club"
-                                handleChange={this.handleChange} handleSubmit={this.createClub} />
+                <h1>Update Club</h1>
+                <CreateClubForm club={this.state.club} errors={this.state.errors} buttonText="Update Club"
+                                handleChange={this.handleChange} handleSubmit={this.updateClub} />
             </div>
         );
     }
 }
 
-export default CreateClubPage;
+export default UpdateClubPage;
