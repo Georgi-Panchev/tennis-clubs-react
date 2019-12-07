@@ -6,6 +6,7 @@ class FormHelpers {
         if (target.type === 'checkbox') {
             value = target.checked;
         }
+
         const stateObject = this.state[stateField];
         stateObject[field] = value;
         this.setState({ [stateField]: stateObject });

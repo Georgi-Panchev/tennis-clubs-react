@@ -4,7 +4,8 @@ const userActions = {
     types: {
         REGISTER_USER: 'REGISTER_USER',
         LOGIN_USER: 'LOGIN_USER',
-        GET_PROFILE: 'GET_PROFILE'
+        GET_PROFILE: 'GET_PROFILE',
+        UPDATE_NAVBAR: 'UPDATE_NAVBAR'
     },
 
     register(user) {
@@ -24,6 +25,13 @@ const userActions = {
     getProfile() {
         dispatcher.dispatch({
             type: this.types.GET_PROFILE
+        });
+    },
+
+    updateNavbar(isUserLoggedIn) {
+        dispatcher.dispatch({
+            type: this.types.UPDATE_NAVBAR,
+            isUserLoggedIn
         });
     }
 };

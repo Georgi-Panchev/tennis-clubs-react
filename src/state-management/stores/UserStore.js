@@ -25,6 +25,10 @@ class UserStore extends EventEmitter {
             });
     }
 
+    updateNavbar(isUserLoggedIn) {
+        this.emit(this.eventTypes.NAVBAR_UPDATED, isUserLoggedIn);
+    }
+
     handleAction(action) {
         switch (action.type) {
             case userActions.types.REGISTER_USER: {
@@ -39,6 +43,10 @@ class UserStore extends EventEmitter {
                 this.getProfile();
                 break;
             }
+            case userActions.types.UPDATE_NAVBAR: {
+                this.updateNavbar(action.isUserLoggedIn);
+                break;
+            }
             default: break;
         }
     }
@@ -49,7 +57,8 @@ const userStore = new UserStore();
 userStore.eventTypes = {
     USER_REGISTERED: 'user_registered',
     USER_LOGGED_IN: 'user_logged_in',
-    PROFILE_GOT: 'profile_got'
+    PROFILE_GOT: 'profile_got',
+    NAVBAR_UPDATED: 'navbar_updated'
 };
 
 dispatcher.register(userStore.handleAction.bind(userStore));

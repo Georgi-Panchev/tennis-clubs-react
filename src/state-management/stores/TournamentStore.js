@@ -2,8 +2,6 @@ import { EventEmitter } from 'events';
 import dispatcher from '../dispatcher';
 import tournamentActions from '../actions/tournamentActions';
 import TournamentService from '../../services/TournamentService';
-import clubActions from '../actions/clubActions';
-import ClubService from '../../services/ClubService';
 
 class TournamentStore extends EventEmitter {
     create(clubId, tournament) {
