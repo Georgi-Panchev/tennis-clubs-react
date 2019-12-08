@@ -42,6 +42,7 @@ function TournamentForm(props) {
                 </InputGroup>
                 {errors.fee && <Alert variant="danger" className="p-2">{errors.fee}</Alert>}
             </Form.Group>
+
             <Button variant="primary" type="submit">
                 {buttonText}
             </Button>

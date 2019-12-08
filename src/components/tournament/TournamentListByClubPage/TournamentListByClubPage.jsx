@@ -10,7 +10,7 @@ class TournamentListByClubPage extends Component {
         super(props);
 
         this.state = {
-            tournamentListByClub: [],
+            tournamentListByClub: null,
             clubTitle: '',
             clubId: ''
         };
@@ -37,8 +37,10 @@ class TournamentListByClubPage extends Component {
     }
 
     getTournamentListByClubElements() {
-        if (this.state.tournamentListByClub.length > 0) {
-            return this.state.tournamentListByClub
+        const tournamentListByClub = this.state.tournamentListByClub;
+
+        if (tournamentListByClub && tournamentListByClub.length > 0) {
+            return tournamentListByClub
                 .map((tournament) => (
                     <TournamentCard key={tournament._id} tournament={tournament} />
                 ));
@@ -49,7 +51,7 @@ class TournamentListByClubPage extends Component {
         const tournamentListByClubElements = this.getTournamentListByClubElements();
         const clubTitle = this.state.clubTitle;
         const clubId = this.state.clubId;
-        const clubTournaments = this.state.tournamentListByClub;
+        const tournamentListByClub = this.state.tournamentListByClub;
 
         return (
             <Container className="mb-5">
@@ -59,7 +61,7 @@ class TournamentListByClubPage extends Component {
                         <CardColumns>
                             {tournamentListByClubElements}
                         </CardColumns>
-                        {clubTournaments <= 0 && <Jumbotron>
+                        {tournamentListByClub && tournamentListByClub.length === 0 && <Jumbotron>
                             <h1>No Tournaments Available!</h1>
                             <Button as={Link} to={`/tournament/create/${clubId}`}
                                     variant="primary" className="m-3">

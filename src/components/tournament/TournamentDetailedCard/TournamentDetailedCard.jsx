@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import Auth from '../../../utils/Auth';
 import { Button, Card, CardDeck, ListGroup, ListGroupItem } from 'react-bootstrap';
-import ball from '../../../ball.png';
+import ball from '../../../images/ball.png';
 
 const TournamentDetailedCard = (props) => {
     const { tournament } = props;
@@ -14,7 +14,8 @@ const TournamentDetailedCard = (props) => {
             Attend Tournament
         </Button>
     );
-    if (Object.keys(tournament).length !== 0 && tournament.playersRegistered.includes(userId)) {
+    if (Object.keys(tournament).length !== 0
+        && tournament.playersRegistered.find((user) => user._id === userId)) {
         linkElement = (
             <Button as={Link} to={`/tournament/leave/${tournament._id}`}
                     variant="danger" className="mt-3 mb-3">
@@ -41,13 +42,20 @@ const TournamentDetailedCard = (props) => {
         );
     }
 
+    let playersListElements = null;
+    if (Object.keys(tournament).length !== 0) {
+        playersListElements = tournament.playersRegistered
+            .map((user, index) => (
+                <ListGroupItem key={index}>{user.username}</ListGroupItem>
+            ));
+    }
+
     return (
         <CardDeck>
-            <Card style={{ width: '25rem' }} className="m-5">
-                <Card.Img variant="top" src={tournament.imageUrl} style={{ height: '25rem' }} />
-            </Card>
-            <Card style={{ width: '25rem' }} className="m-5">
-                <Card.Body className="p-0 mt-5 text-center">
+            <Card.Img className="m-5" variant="top" src={tournament.imageUrl}
+                      style={{ height: '27rem', width: '20rem' }}/>
+            <Card className="m-5">
+                <Card.Body className="p-0 mt-3 text-center">
                     <Card.Title className="text-center">{tournament.title}</Card.Title>
                     <ListGroup className="list-group-club">
                         <ListGroupItem>
@@ -60,6 +68,14 @@ const TournamentDetailedCard = (props) => {
                         {linkElement}
                         {linkListElements}
                     </Card.Body>
+                </Card.Body>
+            </Card>
+            <Card className="m-5">
+                <Card.Body className="p-0 mt-3 text-center">
+                    <Card.Title>Players Attended</Card.Title>
+                    <ListGroup className="list-group-club">
+                        {playersListElements}
+                    </ListGroup>
                 </Card.Body>
             </Card>
         </CardDeck>

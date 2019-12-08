@@ -66,3 +66,40 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/de
 ### `npm run build` fails to minify
 
 This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+
+
+
+### Tennis Tournaments App
+
+About: application about management of tennis clubs and tournaments.
+
+Application Areas:
+- Guest
+- User
+- Admin
+
+Guest Area:
+- Register a user profile and Login
+- View all tennis clubs and tennis tournaments
+
+User Area:
+- Logout 
+- View all tennis clubs and tennis tournaments
+- View club and tournament Details
+- View User profile with attended tournaments
+- Attend tournaments
+- Leave tournaments
+
+Admin Area:
+- Logout 
+- View all tennis clubs and tennis tournaments
+- View club and tournament Details
+- View User profile with attended tournaments
+- View club tournaments
+- Attend tournaments
+- Leave tournaments
+- Create tennis clubs and tournaments
+- Update tennis clubs and tournaments
+- Delete tennis clubs and tournaments
+
+

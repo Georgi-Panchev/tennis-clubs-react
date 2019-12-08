@@ -26,6 +26,7 @@ function RegisterForm(props) {
                               name="confirmPassword" value={user.confirmPassword} onChange={handleChange} />
                 {errors.passwords && <Alert variant="danger" className="p-2">{errors.passwords}</Alert>}
             </Form.Group>
+
             <Button variant="primary" type="submit">
                 Register User
             </Button>

@@ -11,7 +11,7 @@ class ClubListPage extends Component {
         super(props);
 
         this.state = {
-            clubList: [],
+            clubList: null,
         };
 
         clubStore.on(clubStore.eventTypes.CLUBS_FETCHED, this.all);
@@ -33,8 +33,10 @@ class ClubListPage extends Component {
     }
 
     getClubListElements() {
-        if (this.state.clubList.length > 0) {
-            return this.state.clubList
+        const clubList = this.state.clubList;
+
+        if (clubList && clubList.length > 0) {
+            return clubList
                 .map((club) => (
                     <ClubCard key={club._id} club={club} />
                 ));
@@ -53,7 +55,7 @@ class ClubListPage extends Component {
                         <CardColumns>
                             {clubListElements}
                         </CardColumns>
-                        {clubList <= 0 && <Jumbotron>
+                        {clubList && clubList.length === 0 && <Jumbotron>
                             <h1>No Clubs Available!</h1>
                             {Auth.isUserAdmin() &&
                             <Button as={Link} to={'/club/create'}

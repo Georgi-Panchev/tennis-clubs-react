@@ -10,7 +10,7 @@ class TournamentListPage extends Component {
         super(props);
 
         this.state = {
-            tournamentList: [],
+            tournamentList: null,
         };
 
         tournamentStore.on(tournamentStore.eventTypes.TOURNAMENTS_FETCHED, this.all);
@@ -32,8 +32,10 @@ class TournamentListPage extends Component {
     }
 
     getTournamentListElements() {
-        if (this.state.tournamentList.length > 0) {
-            return this.state.tournamentList
+        const tournamentList = this.state.tournamentList;
+
+        if (tournamentList && tournamentList.length > 0) {
+            return tournamentList
                 .map((tournament) => (
                     <TournamentCard key={tournament._id} tournament={tournament} />
                 ));
@@ -52,10 +54,9 @@ class TournamentListPage extends Component {
                         <CardColumns>
                             {tournamentListElements}
                         </CardColumns>
-                        {tournamentList <= 0 && <Jumbotron>
+                        {tournamentList && tournamentList.length === 0 && <Jumbotron>
                             <h1>No Tournaments Available!</h1>
-                            <Button as={Link} to={`/club/all`}
-                                    variant="primary" className="m-3">
+                            <Button as={Link} to={`/club/all`} variant="primary" className="m-3">
                                 Tennis Clubs
                             </Button>
                         </Jumbotron>}

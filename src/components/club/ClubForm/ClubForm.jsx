@@ -67,6 +67,7 @@ function ClubForm(props) {
             <Form.Check type="switch" id="indoor-courts-switch" label="Indoor Courts" className="mt-3 mb-3"
                         name="hasIndoorCourts" checked={club.hasIndoorCourts}
                         value={club.hasIndoorCourts} onChange={handleChange} />
+
             <Button variant="primary" type="submit">
                 {buttonText}
             </Button>

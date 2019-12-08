@@ -52,7 +52,6 @@ class Header extends Component {
             profileLinkElement = <Nav.Link as={Link} to="/user/profile">User Profile</Nav.Link>;
         }
 
-
         let adminLinkElement = null;
         if (this.state.isUserLoggedIn && Auth.isUserAdmin()) {
             adminLinkElement = <Nav.Link as={Link} to="/club/create">Create Tennis Club</Nav.Link>;

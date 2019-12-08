@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import TournamentDetailedCard from '../TournamentDetailedCard/TournamentDetailedCard';
 import tournamentActions from '../../../state-management/actions/tournamentActions';
 import tournamentStore from '../../../state-management/stores/TournamentStore';
-import { CardColumns, Col, Container, Row } from 'react-bootstrap';
+import { Col, Container, Row } from 'react-bootstrap';
 
 class TournamentDetailsPage extends Component {
     constructor(props) {

@@ -19,6 +19,7 @@ function LoginForm(props) {
                               name="password" value={user.password} onChange={handleChange} />
                 {errors.password && <Alert variant="danger" className="p-2">{errors.password}</Alert>}
             </Form.Group>
+
             <Button variant="primary" type="submit">
                 Login User
             </Button>

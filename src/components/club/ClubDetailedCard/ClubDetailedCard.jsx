@@ -2,9 +2,9 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import Auth from '../../../utils/Auth';
 import { Button, Card, CardDeck, ListGroup, ListGroupItem } from 'react-bootstrap';
-import tennisCourt from '../../../tennis-court.png';
-import lighting from '../../../light.png';
-import indoorCourts from '../../../stadium.png';
+import tennisCourt from '../../../images/tennis-court.png';
+import lighting from '../../../images/light.png';
+import indoorCourts from '../../../images/stadium.png';
 
 const ClubDetailedCard = (props) => {
     const { club } = props;
@@ -42,11 +42,10 @@ const ClubDetailedCard = (props) => {
 
     return (
         <CardDeck>
-            <Card style={{ width: '35rem' }} className="m-5">
-                <Card.Img variant="top" src={club.imageUrl} style={{ height: '35rem' }} />
-            </Card>
-            <Card style={{ width: '35rem' }} className="m-5">
-                <Card.Body className="p-0 mt-5 text-center">
+            <Card.Img className="m-5" variant="top" src={club.imageUrl}
+                      style={{ height: '27rem', width: '30rem' }}/>
+            <Card className="m-5">
+                <Card.Body className="p-0 mt-3 text-center">
                     <Card.Title className="text-center">{club.title}</Card.Title>
                     <ListGroup className="list-group-club">
                         <ListGroupItem>City: {club.city}</ListGroupItem>

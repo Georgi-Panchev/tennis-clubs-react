@@ -14,7 +14,6 @@ class UpdateClubPage extends Component {
         const { club } = this.props.location.state;
         const id = this.props.match.params.id;
 
-
         this.state = {
             id,
             club: {

@@ -3,7 +3,6 @@ import ClubDetailedCard from '../ClubDetailedCard/ClubDetailedCard';
 import clubActions from '../../../state-management/actions/clubActions';
 import clubStore from '../../../state-management/stores/ClubStore';
 import { Col, Container, Row } from 'react-bootstrap';
-import TournamentDetailedCard from '../../tournament/TournamentDetailedCard/TournamentDetailedCard';
 
 class ClubDetailsPage extends Component {
     constructor(props) {

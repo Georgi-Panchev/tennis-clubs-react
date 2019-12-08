@@ -10,7 +10,7 @@ class ProfilePage extends Component {
         super(props);
 
         this.state = {
-            profileTournamentList: [],
+            profileTournamentList: null,
         };
 
         userStore.on(userStore.eventTypes.PROFILE_GOT, this.profile);
@@ -32,8 +32,10 @@ class ProfilePage extends Component {
     }
 
     getProfileTournamentListElements() {
-        if (this.state.profileTournamentList.length > 0) {
-            return this.state.profileTournamentList
+        const profileTournamentList = this.state.profileTournamentList;
+
+        if (profileTournamentList && profileTournamentList.length > 0) {
+            return profileTournamentList
                 .map((tournament) => (
                     <TournamentCard key={tournament._id} tournament={tournament} />
                 ));
@@ -52,7 +54,7 @@ class ProfilePage extends Component {
                         <CardColumns>
                             {profileTournamentListElements}
                         </CardColumns>
-                        {profileTournamentList <= 0 && <Jumbotron>
+                        {profileTournamentList && profileTournamentList.length === 0 && <Jumbotron>
                             <h1>No Tournaments Attended!</h1>
                             <Button as={Link} to={`/tournament/all`}
                                     variant="primary" className="m-3">
