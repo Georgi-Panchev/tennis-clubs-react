@@ -72,7 +72,7 @@ const TournamentDetailedCard = (props) => {
             </Card>
             <Card className="m-5">
                 <Card.Body className="p-0 mt-3 text-center">
-                    <Card.Title>Players Attended</Card.Title>
+                    <Card.Title>Players Attended:</Card.Title>
                     <ListGroup className="list-group-club">
                         {playersListElements}
                     </ListGroup>
