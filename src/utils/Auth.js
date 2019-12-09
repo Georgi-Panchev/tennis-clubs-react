@@ -30,7 +30,7 @@ class Auth {
 
     static isUserAdmin() {
         let user = this.getUser();
-        if (Object.keys(user).length > 0) {
+        if (Object.keys(user).length > 0 && user.roles) {
             return user.roles.includes('Admin');
         }
 
