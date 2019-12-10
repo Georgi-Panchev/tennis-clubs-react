@@ -37,7 +37,7 @@ function TournamentForm(props) {
                     <Form.Control type="number" placeholder="Enter fee" aria-label="Fee" aria-describedby="basic-fee"
                                   name="fee" value={tournament.fee} onChange={handleChange} />
                     <InputGroup.Append>
-                        <InputGroup.Text id="basic-fee">$</InputGroup.Text>
+                        <InputGroup.Text id="basic-fee">lv</InputGroup.Text>
                     </InputGroup.Append>
                 </InputGroup>
                 {errors.fee && <Alert variant="danger" className="p-2">{errors.fee}</Alert>}
