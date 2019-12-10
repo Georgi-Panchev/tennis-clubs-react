@@ -1,0 +1,42 @@
+Register User
+- validations
+- gosho gosho /fail
+- maria maria
+
+Login User
+- validations
+- maria 123 /fail
+
+- Details
+
+- Logout
+
+Create Club
+- validations
+
+Velto
+https://clickandplay.bg/f/news/m/0/e87a715525529e0aae6a3da61edc8ecd.png
+Varna
+Low
+2
+yes
+yes
+
+Create Tournament
+- validations
+
+Ladies Open
+http://tennisvarna.net/wp-content/uploads/2016/07/Depositphotos_26119823_original-1024x400.jpg
+Wilson
+30
+
+Attend Tournament
+Leave Tournament
+- maria
+- pesho
+- gosho
+
+Update Club
+Update Tournament
+Delete Club
+Delete Tournament
