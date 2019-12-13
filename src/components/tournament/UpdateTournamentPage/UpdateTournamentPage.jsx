@@ -11,7 +11,7 @@ class UpdateTournamentPage extends Component {
     constructor(props) {
         super(props);
 
-        let tournament = '';
+        let tournament = {};
         if (this.props.location.state) {
             tournament = this.props.location.state.tournament;
         }

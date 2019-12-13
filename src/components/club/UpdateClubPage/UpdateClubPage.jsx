@@ -11,7 +11,7 @@ class UpdateClubPage extends Component {
     constructor(props) {
         super(props);
 
-        let club = '';
+        let club = {};
         if (this.props.location.state) {
             club = this.props.location.state.club;
         }
