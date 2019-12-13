@@ -17,9 +17,11 @@ class ClubDetailsPage extends Component {
 
     byId = (data) => {
         console.log(data);
-        this.setState({
-            club: data.club
-        });
+        if (data.club) {
+            this.setState({
+                club: data.club
+            });
+        }
     };
 
     componentWillUnmount() {

@@ -20,11 +20,13 @@ class TournamentListByClubPage extends Component {
 
     allByClub = (data) => {
         console.log(data);
-        this.setState({
-            tournamentListByClub: data.tournaments,
-            clubTitle: data.club.title,
-            clubId: data.club._id
-        });
+        if (data.tournaments) {
+            this.setState({
+                tournamentListByClub: data.tournaments,
+                clubTitle: data.club.title,
+                clubId: data.club._id
+            });
+        }
     };
 
     componentWillUnmount() {

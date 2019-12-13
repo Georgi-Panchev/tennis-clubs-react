@@ -17,9 +17,11 @@ class TournamentDetailsPage extends Component {
 
     byId = (data) => {
         console.log(data);
-        this.setState({
-            tournament: data.tournament
-        });
+        if (data.tournament) {
+            this.setState({
+                tournament: data.tournament
+            });
+        }
     };
 
     componentWillUnmount() {

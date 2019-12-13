@@ -1,8 +1,7 @@
 import React from 'react';
 import { Switch, Route } from 'react-router-dom';
 
-import UserRoute from '../UserRoute/UserRoute';
-import AdminRoute from '../AdminRoute/AdminRoute';
+import PrivateRoute from '../PrivateRoute/PrivateRoute';
 
 import HomePage from '../../core/HomePage/HomePage';
 
@@ -33,24 +32,24 @@ const Routes = () => (
         <Route path="/" exact component={HomePage} />
 
         <Route path="/club/all" component={ClubListPage} />
-        <AdminRoute path="/club/create" component={CreateClubPage} />
-        <UserRoute path="/club/details/:id" component={ClubDetailsPage} />
-        <AdminRoute path="/club/update/:id" component={UpdateClubPage} />
-        <AdminRoute path="/club/delete/:id" component={DeleteClub} />
+        <PrivateRoute path="/club/create" component={CreateClubPage} role="admin" />
+        <PrivateRoute path="/club/details/:id" component={ClubDetailsPage} role="user" />
+        <PrivateRoute path="/club/update/:id" component={UpdateClubPage} role="admin" />
+        <PrivateRoute path="/club/delete/:id" component={DeleteClub} role="admin" />
 
-        <AdminRoute path="/tournament/create/:clubId" component={CreateTournamentPage} />
-        <AdminRoute path="/tournament/all/:clubId" component={TournamentListByClubPage} />
+        <PrivateRoute path="/tournament/create/:clubId" component={CreateTournamentPage} role="admin" />
+        <PrivateRoute path="/tournament/all/:clubId" component={TournamentListByClubPage} role="admin" />
         <Route path="/tournament/all" component={TournamentListPage} />
-        <UserRoute path="/tournament/details/:tournamentId" component={TournamentDetailsPage} />
-        <UserRoute path="/tournament/attend/:tournamentId" component={AttendTournament} />
-        <UserRoute path="/tournament/leave/:tournamentId" component={LeaveTournament} />
-        <AdminRoute path="/tournament/update/:tournamentId" component={UpdateTournamentPage} />
-        <AdminRoute path="/tournament/delete/:tournamentId" component={DeleteTournament} />
+        <PrivateRoute path="/tournament/details/:tournamentId" component={TournamentDetailsPage} role="user"/>
+        <PrivateRoute path="/tournament/attend/:tournamentId" component={AttendTournament} role="user" />
+        <PrivateRoute path="/tournament/leave/:tournamentId" component={LeaveTournament} role="user" />
+        <PrivateRoute path="/tournament/update/:tournamentId" component={UpdateTournamentPage} role="admin" />
+        <PrivateRoute path="/tournament/delete/:tournamentId" component={DeleteTournament} role="admin" />
 
-        <Route path="/user/register" component={RegisterPage} />
-        <Route path="/user/login" component={LoginPage} />
-        <UserRoute path="/user/logout" component={Logout} />
-        <UserRoute path="/user/profile" component={ProfilePage} />
+        <PrivateRoute path="/user/register" component={RegisterPage} role="guest" page="/" />
+        <PrivateRoute path="/user/login" component={LoginPage} role="guest" page="/" />
+        <PrivateRoute path="/user/logout" component={Logout} role="user" />
+        <PrivateRoute path="/user/profile" component={ProfilePage} role="user" />
 
         <Route component={NotFoundPage} />
     </Switch>

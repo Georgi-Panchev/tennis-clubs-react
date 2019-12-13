@@ -11,7 +11,10 @@ class UpdateTournamentPage extends Component {
     constructor(props) {
         super(props);
 
-        const { tournament } = this.props.location.state;
+        let tournament = '';
+        if (this.props.location.state) {
+            tournament = this.props.location.state.tournament;
+        }
         const id = this.props.match.params.tournamentId;
 
         this.state = {
