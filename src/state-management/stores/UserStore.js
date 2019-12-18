@@ -25,8 +25,8 @@ class UserStore extends EventEmitter {
             });
     }
 
-    updateNavbar(isUserLoggedIn) {
-        this.emit(this.eventTypes.NAVBAR_UPDATED, isUserLoggedIn);
+    updateNavbar(isUserLoggedIn, username) {
+        this.emit(this.eventTypes.NAVBAR_UPDATED, isUserLoggedIn, username);
     }
 
     handleAction(action) {
@@ -44,7 +44,7 @@ class UserStore extends EventEmitter {
                 break;
             }
             case userActions.types.UPDATE_NAVBAR: {
-                this.updateNavbar(action.isUserLoggedIn);
+                this.updateNavbar(action.isUserLoggedIn, action.username);
                 break;
             }
             default: break;

@@ -1,10 +1,10 @@
-import { Component } from 'react';
+import { useEffect } from 'react';
 import toastr from 'toastr';
 import Auth from '../../../utils/Auth';
 import userActions from '../../../state-management/actions/userActions';
 
-class Logout extends Component {
-    componentDidMount() {
+const Logout = (props) => {
+    useEffect(() => {
         Auth.deauthenticateUser();
         Auth.removeUser();
         toastr.success('User Logged Out!');
@@ -12,12 +12,10 @@ class Logout extends Component {
         const isUserLoggedIn = Auth.isUserAuthenticated();
         userActions.updateNavbar(isUserLoggedIn);
 
-        this.props.history.push('/');
-    }
+        props.history.push('/');
+    });
 
-    render() {
-        return null;
-    }
-}
+    return null;
+};
 
 export default Logout;

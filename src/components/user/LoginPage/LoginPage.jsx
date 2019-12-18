@@ -37,7 +37,8 @@ class LoginPage extends Component {
         toastr.success(data.message);
 
         const isUserLoggedIn = Auth.isUserAuthenticated();
-        userActions.updateNavbar(isUserLoggedIn);
+        const username = data.user.username;
+        userActions.updateNavbar(isUserLoggedIn, username);
 
         this.props.history.push('/');
     };

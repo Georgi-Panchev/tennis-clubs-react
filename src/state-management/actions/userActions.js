@@ -28,10 +28,11 @@ const userActions = {
         });
     },
 
-    updateNavbar(isUserLoggedIn) {
+    updateNavbar(isUserLoggedIn, username) {
         dispatcher.dispatch({
             type: this.types.UPDATE_NAVBAR,
-            isUserLoggedIn
+            isUserLoggedIn,
+            username
         });
     }
 };
