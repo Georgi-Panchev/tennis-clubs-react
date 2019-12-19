@@ -13,7 +13,7 @@ const Logout = (props) => {
         userActions.updateNavbar(isUserLoggedIn);
 
         props.history.push('/');
-    });
+    }, [ props.history ]);
 
     return null;
 };

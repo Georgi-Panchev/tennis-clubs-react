@@ -1,4 +1,4 @@
-import React, { useMemo, useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import Auth from '../../../utils/Auth';
 import userStore from '../../../state-management/stores/UserStore';
@@ -20,9 +20,9 @@ const Header = () => {
         });
     };
 
-    useMemo(() => {
+    useEffect(() => {
         userStore.on(userStore.eventTypes.NAVBAR_UPDATED, updateNavbar);
-    },[]);
+    }, []);
 
     let linkListElements = (
         <Nav>
